@@ -29,3 +29,24 @@ p {
   font-size: 1rem;
   color: #ff0000;
 }
+
+@keyframes unfold-height {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100svh;
+  }
+}
+
+#mid-line {
+  position: fixed;
+  left: 50%;
+  top: 0px;
+
+  width: 1px;
+  height: 100svh;
+  background-color: #ff000077;
+
+  animation: unfold-height 1.5s ease-in-out;
+}
